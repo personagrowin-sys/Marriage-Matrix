@@ -1,0 +1,7 @@
+{
+  "name": "Persona Grow — Marriage Clarity Call",
+  "description": "Discover what's holding you back and get a personalised roadmap to find your ideal life partner.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
