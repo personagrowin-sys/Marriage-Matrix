@@ -39,14 +39,14 @@ export const StickyMobileCTA: React.FC<StickyMobileCTAProps> = ({
   if (!isVisible) return null;
 
   return (
-    <aside aria-label="Mobile Call to Action" className="fixed bottom-0 inset-x-0 z-50 p-2.5 sm:p-3 bg-white/95 backdrop-blur-md border-t border-slate-200/90 shadow-lg md:hidden transition-transform duration-300">
+    <aside aria-label="Mobile Call to Action" className="fixed bottom-0 inset-x-0 z-50 p-2.5 sm:p-3 bg-white/95 backdrop-blur-md border-t border-[#0e2a6e]/15 shadow-lg md:hidden transition-transform duration-300">
       <div className="max-w-md mx-auto flex items-center gap-2">
         <button
           onClick={handleClick}
           id="sticky-mobile-cta-btn"
-          className="w-full flex items-center justify-center gap-2 bg-[#ffd43f] active:bg-[#f5c721] text-[#081120] font-black text-xs sm:text-sm py-3 px-3 rounded-xl shadow-md uppercase tracking-wider transition-all cursor-pointer border border-amber-300"
+          className="w-full flex items-center justify-center gap-2 bg-[#ffde59] active:bg-[#ffde59]/90 text-black font-black text-xs sm:text-sm py-3 px-3 rounded-xl shadow-md uppercase tracking-wider transition-all cursor-pointer border border-black/15"
         >
-          <span>BOOK YOUR MARRIAGE CLARITY CALL</span>
+          <span>BOOK YOUR MARRIAGE PROPOSAL STRATEGY CALL</span>
           <ArrowRight className="w-4 h-4 shrink-0 stroke-[2.5]" />
         </button>
       </div>

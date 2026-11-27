@@ -104,11 +104,11 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
   };
 
   return (
-    <section id="testimonials-section" className="py-10 sm:py-16 md:py-20 bg-white border-b border-slate-200">
+    <section id="testimonials-section" className="py-10 sm:py-16 md:py-20 bg-[#0e2a6e]/[0.03] border-b border-[#0e2a6e]/15">
       <div className="max-w-[1400px] mx-auto px-3 sm:px-6 lg:px-8">
-        {/* Header - Matching user's exact "Client Results" title style */}
+        {/* Header */}
         <div className="text-center mb-6 sm:mb-12">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-[#1e255e] font-display tracking-tight">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-[#0e2a6e] font-display tracking-tight">
             Client Results
           </h2>
         </div>
@@ -119,7 +119,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
             onClick={() => scroll('left')}
             disabled={!canScrollLeft}
             aria-label="Previous results"
-            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 flex items-center justify-center transition-all disabled:opacity-30 disabled:cursor-not-allowed shadow-sm active:scale-95"
+            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-[#0e2a6e]/25 bg-white hover:bg-[#ffde59] text-[#0e2a6e] hover:text-black flex items-center justify-center transition-all disabled:opacity-30 disabled:cursor-not-allowed shadow-sm active:scale-95"
           >
             <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.5]" />
           </button>
@@ -127,7 +127,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
             onClick={() => scroll('right')}
             disabled={!canScrollRight}
             aria-label="Next results"
-            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 flex items-center justify-center transition-all disabled:opacity-30 disabled:cursor-not-allowed shadow-sm active:scale-95"
+            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-[#0e2a6e]/25 bg-white hover:bg-[#ffde59] text-[#0e2a6e] hover:text-black flex items-center justify-center transition-all disabled:opacity-30 disabled:cursor-not-allowed shadow-sm active:scale-95"
           >
             <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.5]" />
           </button>
@@ -143,10 +143,10 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
           {CLIENT_RESULTS.map((item) => (
             <div
               key={item.id}
-              className="snap-start shrink-0 w-[calc(50%-5px)] sm:w-[calc(50%-8px)] md:w-[calc(33.333%-14px)] lg:w-[calc(25%-15px)] bg-white rounded-xl sm:rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-md transition-all flex flex-col overflow-hidden"
+              className="snap-start shrink-0 w-[calc(50%-5px)] sm:w-[calc(50%-8px)] md:w-[calc(33.333%-14px)] lg:w-[calc(25%-15px)] bg-white rounded-xl sm:rounded-2xl border border-[#0e2a6e]/15 shadow-xs hover:shadow-md transition-all flex flex-col overflow-hidden"
             >
               {/* Photo with clean curved top borders */}
-              <div className="relative w-full h-44 sm:h-56 md:h-64 bg-slate-100 overflow-hidden">
+              <div className="relative w-full h-44 sm:h-56 md:h-64 bg-black/5 overflow-hidden">
                 <img
                   src={
                     item.id === 1
@@ -180,21 +180,20 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
 
               {/* Card Body */}
               <div className="p-2.5 sm:p-4 md:p-5 flex-1 flex flex-col">
-                {/* Title in maroon / dark red as in the user screenshot */}
-                <h3 className="text-center font-bold text-xs sm:text-base md:text-lg text-[#881337] tracking-tight">
+                <h3 className="text-center font-bold text-xs sm:text-base md:text-lg text-[#0e2a6e] tracking-tight">
                   {item.title}
                 </h3>
 
                 {/* Subtitle / Challenge */}
-                <p className="text-center text-[10px] sm:text-xs md:text-sm font-semibold text-slate-500 mt-0.5 leading-tight">
+                <p className="text-center text-[10px] sm:text-xs md:text-sm font-semibold text-black/60 mt-0.5 leading-tight">
                   {item.subtitle}
                 </p>
 
-                {/* Divider line like in screenshot */}
-                <div className="w-full h-px bg-slate-200/90 my-2 sm:my-3.5" />
+                {/* Divider line */}
+                <div className="w-full h-px bg-[#0e2a6e]/15 my-2 sm:my-3.5" />
 
                 {/* Testimonial Quote text */}
-                <p className="text-[11px] sm:text-xs md:text-[13px] text-slate-700 leading-snug sm:leading-relaxed font-normal text-left flex-1">
+                <p className="text-[11px] sm:text-xs md:text-[13px] text-black/80 leading-snug sm:leading-relaxed font-normal text-left flex-1">
                   {item.quote}
                 </p>
               </div>

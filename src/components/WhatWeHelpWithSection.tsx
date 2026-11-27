@@ -34,14 +34,14 @@ export const WhatWeHelpWithSection: React.FC<WhatWeHelpWithProps> = ({ onScrollT
   ];
 
   return (
-    <section id="what-we-help-with-section" className="py-16 md:py-24 bg-white border-b border-slate-200/70">
+    <section id="what-we-help-with-section" className="py-16 md:py-24 bg-white border-b border-[#0e2a6e]/15">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-xs uppercase tracking-widest font-bold text-amber-600 mb-2 block">
+          <span className="text-xs uppercase tracking-widest font-bold text-black bg-[#ffde59] px-2.5 py-0.5 rounded-sm inline-block mb-2">
             System &amp; Structure
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#081120] font-display">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#0e2a6e] font-display">
             What Can Marriage Matrix Help You With?
           </h2>
         </div>
@@ -53,23 +53,23 @@ export const WhatWeHelpWithSection: React.FC<WhatWeHelpWithProps> = ({ onScrollT
             return (
               <div
                 key={idx}
-                className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-300 transition-all shadow-2xs group"
+                className="bg-[#0e2a6e]/[0.03] border border-[#0e2a6e]/15 rounded-2xl p-6 flex flex-col justify-between hover:border-[#0e2a6e]/35 transition-all shadow-2xs group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-black tracking-widest text-amber-600 font-mono">
+                    <span className="text-xs font-black tracking-widest text-[#0e2a6e] font-mono">
                       {card.num}
                     </span>
-                    <div className="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-slate-700 shadow-2xs">
+                    <div className="w-8 h-8 rounded-lg bg-[#0e2a6e] flex items-center justify-center text-[#ffde59] shadow-2xs">
                       <Icon className="w-4 h-4" />
                     </div>
                   </div>
                   
-                  <h3 className="text-sm font-extrabold text-[#081120] tracking-wider uppercase mb-2.5 font-display">
+                  <h3 className="text-sm font-extrabold text-[#0e2a6e] tracking-wider uppercase mb-2.5 font-display">
                     {card.tag}
                   </h3>
 
-                  <p className="text-sm text-slate-600 leading-relaxed">
+                  <p className="text-sm text-black/75 leading-relaxed">
                     {card.text}
                   </p>
                 </div>
@@ -80,16 +80,16 @@ export const WhatWeHelpWithSection: React.FC<WhatWeHelpWithProps> = ({ onScrollT
 
         {/* Statement & CTA */}
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-base sm:text-lg text-slate-800 font-medium leading-relaxed mb-8 px-4">
+          <p className="text-base sm:text-lg text-black/80 font-medium leading-relaxed mb-8 px-4">
             The goal isn&apos;t simply to find more profiles. It&apos;s to create better opportunities and develop greater clarity about who is right for you.
           </p>
 
           <button
             onClick={onScrollToForm}
             id="what-we-help-cta"
-            className="inline-flex items-center justify-center gap-2.5 bg-[#ffd43f] hover:bg-[#f5c721] text-[#081120] border border-amber-300 text-sm sm:text-base font-bold px-7 py-3.5 rounded-xl shadow-sm hover:shadow transition-all active:scale-95 cursor-pointer uppercase tracking-wide border "
+            className="inline-flex items-center justify-center gap-2.5 bg-[#ffde59] hover:bg-[#ffde59]/90 text-black border border-black/15 text-sm sm:text-base font-black px-7 py-3.5 rounded-xl shadow-sm hover:shadow transition-all active:scale-95 cursor-pointer uppercase tracking-wide"
           >
-            <span>BOOK YOUR MARRIAGE CLARITY CALL</span>
+            <span>BOOK YOUR MARRIAGE PROPOSAL STRATEGY CALL</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

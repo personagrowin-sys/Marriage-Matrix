@@ -19,7 +19,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
+    <div className="min-h-screen flex flex-col bg-white text-black">
       {/* Main View Flow */}
       <main className="flex-1">
         {/* SECTION 1 — HERO */}

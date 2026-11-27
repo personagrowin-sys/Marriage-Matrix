@@ -15,7 +15,7 @@ export const FiveStepProcessSection: React.FC = () => {
       step: 'Step 2',
       title: 'Get 100 Proposals',
       description:
-        'We Identify 25+ marriage proposal sources according to your expectations and background and set up your profile on each platform. You only send and respond to matches & proposals.',
+        'We Identify 20+ marriage proposal sources according to your expectations and background and set up your profile on each platform. You only send and respond to matches & proposals.',
       icon: Layers,
       colSpan: 'lg:col-span-2',
     },
@@ -48,16 +48,16 @@ export const FiveStepProcessSection: React.FC = () => {
   return (
     <section
       id="five-step-process-section"
-      className="py-10 md:py-14 bg-slate-50 border-b border-slate-200/70"
+      className="py-10 md:py-14 bg-[#0e2a6e]/[0.03] border-b border-[#0e2a6e]/15"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-10">
-          <span className="text-xs uppercase tracking-widest font-bold text-[#081120] bg-[#ffd43f] px-2.5 py-0.5 rounded-sm inline-block mb-2">
+          <span className="text-xs uppercase tracking-widest font-bold text-black bg-[#ffde59] px-2.5 py-0.5 rounded-sm inline-block mb-2">
             How It Works
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#081120] font-display leading-[1.25]">
-            5 Step Process to 100 Marriage Proposal System
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#0e2a6e] font-display leading-[1.25]">
+            100 Marriage Proposals System
           </h2>
         </div>
 
@@ -68,22 +68,22 @@ export const FiveStepProcessSection: React.FC = () => {
             return (
               <div
                 key={index}
-                className={`bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-7 shadow-xs hover:border-slate-300 transition-colors flex flex-col justify-start ${item.colSpan}`}
+                className={`bg-white border border-[#0e2a6e]/15 rounded-2xl p-6 sm:p-7 shadow-xs hover:border-[#0e2a6e]/35 transition-colors flex flex-col justify-start ${item.colSpan}`}
               >
                 <div className="flex items-center justify-between mb-4">
-                  <span className="inline-flex items-center px-3 py-1 rounded-md bg-amber-50 border border-amber-300/80 text-xs font-extrabold uppercase tracking-wider text-[#081120]">
+                  <span className="inline-flex items-center px-3 py-1 rounded-md bg-[#ffde59] text-xs font-extrabold uppercase tracking-wider text-black">
                     {item.step}
                   </span>
-                  <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-[#081120]">
-                    <Icon className="w-5 h-5 text-slate-700" />
+                  <div className="w-10 h-10 rounded-xl bg-[#0e2a6e]/[0.06] flex items-center justify-center text-[#0e2a6e]">
+                    <Icon className="w-5 h-5 text-[#0e2a6e]" />
                   </div>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#081120] mb-2 font-display leading-snug">
+                <h3 className="text-lg font-bold text-[#0e2a6e] mb-2 font-display leading-snug">
                   {item.title}
                 </h3>
 
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-sm text-black/75 leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -92,11 +92,11 @@ export const FiveStepProcessSection: React.FC = () => {
         </div>
 
         {/* Closing Promise Banner */}
-        <div className="max-w-4xl mx-auto bg-[#081120] text-white rounded-2xl p-5 sm:p-6 text-center shadow-md border border-slate-800 flex flex-col sm:flex-row items-center justify-center gap-3">
-          <CheckCircle2 className="w-5 h-5 text-[#ffd43f] shrink-0" />
+        <div className="max-w-4xl mx-auto bg-[#0e2a6e] text-white rounded-2xl p-5 sm:p-6 text-center shadow-md border border-black/15 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <CheckCircle2 className="w-5 h-5 text-[#ffde59] shrink-0" />
           <p className="text-sm sm:text-base font-bold tracking-wide">
             We build it. We run it. You just say yes.{' '}
-            <span className="text-[#ffd43f]">Support continues until you get married.</span>
+            <span className="text-[#ffde59]">Support continues until you get married.</span>
           </p>
         </div>
       </div>
