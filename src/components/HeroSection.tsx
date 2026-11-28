@@ -52,7 +52,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onBookCall, formUrl = 
             </span>
             <span className="block mt-1 sm:mt-1.5">
               to get{' '}
-              <span className="text-[#0e2a6e] underline decoration-[#ff006b] decoration-wavy decoration-2 underline-offset-4 sm:underline-offset-6">
+              <span className="text-[#0e2a6e]">
                 the right marriage proposals.
               </span>
             </span>

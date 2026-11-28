@@ -13,7 +13,7 @@ export const FiveStepProcessSection: React.FC = () => {
     },
     {
       step: 'Step 2',
-      title: 'Get 100 Proposals',
+      title: 'Get 100 Marriage Proposals',
       description:
         'We Identify 20+ marriage proposal sources according to your expectations and background and set up your profile on each platform. You only send and respond to matches & proposals.',
       icon: Layers,
