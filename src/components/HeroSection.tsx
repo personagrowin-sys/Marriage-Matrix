@@ -39,7 +39,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onBookCall, formUrl = 
               struggling to get
             </span>
             <span className="block">
-              <span className="text-[#0e2a6e] underline decoration-[#ff006b] decoration-wavy decoration-2 underline-offset-4">
+              <span className="text-[#0e2a6e]">
                 the right marriage proposals.
               </span>
             </span>
@@ -61,7 +61,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onBookCall, formUrl = 
 
         {/* Subtext under headline */}
         <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-black/75 font-medium leading-relaxed mb-6 sm:mb-7">
-          Discover what&apos;s holding you back and get a personalised roadmap to get{' '}
+          Discover what&apos;s holding you back and get a personalised roadmap to
+          <br />
           <span className="font-bold text-[#0e2a6e] underline decoration-[#ffde59] decoration-2 underline-offset-4">
             100 marriage proposals according to your expectations &amp; background.
           </span>
