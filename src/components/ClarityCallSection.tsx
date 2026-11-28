@@ -47,12 +47,13 @@ export const ClarityCallSection: React.FC<ClarityCallProps> = ({ onBookCall, for
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-10">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0e2a6e] text-white text-xs font-semibold mb-2.5">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-[#ff006b] text-white text-xs font-bold mb-2.5">
             <Clock className="w-3.5 h-3.5 text-[#ffde59]" />
             <span>60 Minute Confidential Marriage Proposal Strategy Call</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#0e2a6e] font-display leading-[1.25] mb-2.5">
-            What Happens on Your Marriage Proposal Strategy Call?
+            What Happens on Your{' '}
+            <span className="text-[#ff006b]">Marriage Proposal Strategy Call?</span>
           </h2>
           <p className="text-base sm:text-lg text-black/70 font-normal">
             A private 60 minute conversation focused on your specific situation.
@@ -66,11 +67,11 @@ export const ClarityCallSection: React.FC<ClarityCallProps> = ({ onBookCall, for
             return (
               <div
                 key={idx}
-                className="bg-white border border-[#0e2a6e]/15 rounded-2xl p-6 sm:p-7 relative flex flex-col justify-between shadow-xs hover:border-[#0e2a6e]/35 transition-colors"
+                className="bg-white border border-[#0e2a6e]/15 rounded-2xl p-6 sm:p-7 relative flex flex-col justify-between shadow-xs hover:border-[#ff006b]/45 transition-colors"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xl font-black text-[#0e2a6e] font-display">
+                    <span className="text-xl font-black text-[#ff006b] font-display tabular-nums">
                       {step.num}
                     </span>
                     <div className="w-10 h-10 rounded-xl bg-[#0e2a6e] flex items-center justify-center">
@@ -92,7 +93,7 @@ export const ClarityCallSection: React.FC<ClarityCallProps> = ({ onBookCall, for
         </div>
 
         {/* Reassurance Banner */}
-        <div className="max-w-3xl mx-auto bg-white border border-[#0e2a6e]/20 rounded-2xl p-6 text-center shadow-xs mb-8">
+        <div className="max-w-3xl mx-auto bg-[#ffde59]/25 border border-[#ffde59] rounded-2xl p-6 text-center shadow-xs mb-8">
           <p className="text-sm sm:text-base font-semibold text-black">
             No generic advice. No one-size-fits-all approach. Just a private conversation about your specific situation.
           </p>
@@ -103,10 +104,10 @@ export const ClarityCallSection: React.FC<ClarityCallProps> = ({ onBookCall, for
           <button
             onClick={handleClick}
             id="clarity-call-cta"
-            className="inline-flex items-center justify-center gap-2.5 bg-[#ffde59] hover:bg-[#ffde59]/90 text-black border border-black/15 text-sm sm:text-base font-black px-8 py-4 rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 cursor-pointer uppercase tracking-wide"
+            className="inline-flex items-center justify-center gap-2.5 bg-[#ff006b] hover:bg-[#ff006b]/90 text-white border border-black/10 text-sm sm:text-base font-black px-8 py-4 rounded-xl shadow-lg shadow-[#ff006b]/25 hover:shadow-xl transition-all active:scale-95 cursor-pointer uppercase tracking-wide"
           >
             <span>BOOK YOUR MARRIAGE PROPOSAL STRATEGY CALL</span>
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4 text-[#ffde59] stroke-[2.75]" />
           </button>
           <p className="mt-2 text-center text-xs sm:text-sm text-black/70 font-medium">
             Your call will be with one of our expert coaches.

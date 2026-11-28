@@ -109,7 +109,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
         {/* Header */}
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-[#0e2a6e] font-display tracking-tight">
-            Client Results
+            Client <span className="text-[#ff006b]">Results</span>
           </h2>
         </div>
 
@@ -119,7 +119,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
             onClick={() => scroll('left')}
             disabled={!canScrollLeft}
             aria-label="Previous results"
-            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-[#0e2a6e]/25 bg-white hover:bg-[#ffde59] text-[#0e2a6e] hover:text-black flex items-center justify-center transition-all disabled:opacity-30 disabled:cursor-not-allowed shadow-sm active:scale-95"
+            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-[#0e2a6e]/25 bg-white hover:bg-[#ff006b] hover:border-[#ff006b] text-[#0e2a6e] hover:text-white flex items-center justify-center transition-all disabled:opacity-30 disabled:cursor-not-allowed shadow-sm active:scale-95 cursor-pointer"
           >
             <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.5]" />
           </button>
@@ -127,7 +127,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
             onClick={() => scroll('right')}
             disabled={!canScrollRight}
             aria-label="Next results"
-            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-[#0e2a6e]/25 bg-white hover:bg-[#ffde59] text-[#0e2a6e] hover:text-black flex items-center justify-center transition-all disabled:opacity-30 disabled:cursor-not-allowed shadow-sm active:scale-95"
+            className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-[#0e2a6e]/25 bg-white hover:bg-[#ff006b] hover:border-[#ff006b] text-[#0e2a6e] hover:text-white flex items-center justify-center transition-all disabled:opacity-30 disabled:cursor-not-allowed shadow-sm active:scale-95 cursor-pointer"
           >
             <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 stroke-[2.5]" />
           </button>
@@ -143,7 +143,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
           {CLIENT_RESULTS.map((item) => (
             <div
               key={item.id}
-              className="snap-start shrink-0 w-[calc(50%-5px)] sm:w-[calc(50%-8px)] md:w-[calc(33.333%-14px)] lg:w-[calc(25%-15px)] bg-white rounded-xl sm:rounded-2xl border border-[#0e2a6e]/15 shadow-xs hover:shadow-md transition-all flex flex-col overflow-hidden"
+              className="snap-start shrink-0 w-[calc(50%-5px)] sm:w-[calc(50%-8px)] md:w-[calc(33.333%-14px)] lg:w-[calc(25%-15px)] bg-white rounded-xl sm:rounded-2xl border border-[#0e2a6e]/15 hover:border-[#ff006b]/40 shadow-xs hover:shadow-md transition-all flex flex-col overflow-hidden"
             >
               {/* Photo with clean curved top borders */}
               <div className="relative w-full h-44 sm:h-56 md:h-64 bg-black/5 overflow-hidden">
@@ -185,7 +185,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
                 </h3>
 
                 {/* Subtitle / Challenge */}
-                <p className="text-center text-[10px] sm:text-xs md:text-sm font-semibold text-black/60 mt-0.5 leading-tight">
+                <p className="text-center text-[10px] sm:text-xs md:text-sm font-bold text-[#ff006b] mt-0.5 leading-tight">
                   {item.subtitle}
                 </p>
 

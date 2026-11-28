@@ -52,11 +52,11 @@ export const BookingConfirmationView: React.FC<BookingConfirmationViewProps> = (
         {/* Success Card */}
         <div className="bg-white border border-[#0e2a6e]/15 rounded-3xl p-6 sm:p-10 shadow-sm text-center">
           {/* Check Icon */}
-          <div className="w-16 h-16 rounded-full bg-[#ffde59] border-2 border-black/15 text-black flex items-center justify-center mx-auto mb-6">
+          <div className="w-16 h-16 rounded-full bg-[#ff006b] text-white flex items-center justify-center mx-auto mb-6 shadow-md shadow-[#ff006b]/25">
             <CheckCircle className="w-9 h-9 stroke-[2.5]" />
           </div>
 
-          <span className="text-xs font-bold uppercase tracking-widest text-[#0e2a6e] mb-2 block">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#ff006b] mb-2 block">
             Booking Confirmed • Reference #{referenceId}
           </span>
 

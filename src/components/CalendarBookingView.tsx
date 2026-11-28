@@ -180,8 +180,8 @@ export const CalendarBookingView: React.FC<CalendarBookingViewProps> = ({
                             onClick={() => handleSelectSlot(slot)}
                             className={`py-2.5 px-3 rounded-lg text-xs sm:text-sm font-bold border transition-all cursor-pointer text-center ${
                               isChosen
-                                ? 'bg-[#ffde59] text-black border-black/20 shadow-sm'
-                                : 'bg-white text-black border-[#0e2a6e]/15 hover:border-[#0e2a6e]/35 hover:bg-[#0e2a6e]/[0.04]'
+                                ? 'bg-[#ff006b] text-white border-[#ff006b] shadow-sm'
+                                : 'bg-white text-black border-[#0e2a6e]/15 hover:border-[#ff006b]/45 hover:bg-[#ff006b]/[0.04]'
                             }`}
                           >
                             {slot}
@@ -195,7 +195,7 @@ export const CalendarBookingView: React.FC<CalendarBookingViewProps> = ({
             </div>
 
             {/* Selection Summary & Confirm Action */}
-            <div className="p-5 bg-[#0e2a6e] text-white rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="p-5 bg-[#0e2a6e] text-white rounded-2xl border-t-4 border-t-[#ff006b] flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <span className="text-xs uppercase tracking-wider text-white/70 font-semibold block">
                   Chosen Consultation
@@ -217,7 +217,7 @@ export const CalendarBookingView: React.FC<CalendarBookingViewProps> = ({
                 type="button"
                 onClick={handleFinalConfirm}
                 disabled={!selectedTime || isConfirming}
-                className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-[#ffde59] hover:bg-[#ffde59]/90 text-black border border-black/15 font-black text-sm uppercase tracking-wider shadow-sm transition-all disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer active:scale-95"
+                className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-[#ff006b] hover:bg-[#ff006b]/90 text-white border border-black/10 font-black text-sm uppercase tracking-wider shadow-lg shadow-[#ff006b]/25 transition-all disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer active:scale-95"
               >
                 {isConfirming ? 'Securing Slot...' : 'CONFIRM CALL APPOINTMENT →'}
               </button>

@@ -53,11 +53,11 @@ export const FiveStepProcessSection: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-10">
-          <span className="text-xs uppercase tracking-widest font-bold text-black bg-[#ffde59] px-2.5 py-0.5 rounded-sm inline-block mb-2">
+          <span className="text-xs uppercase tracking-widest font-bold text-white bg-[#ff006b] px-3 py-1 rounded-md inline-block mb-2.5">
             How It Works
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#0e2a6e] font-display leading-[1.25]">
-            100 Marriage Proposals System
+            <span className="text-[#ff006b]">100 Marriage Proposals</span> System
           </h2>
         </div>
 
@@ -68,14 +68,14 @@ export const FiveStepProcessSection: React.FC = () => {
             return (
               <div
                 key={index}
-                className={`bg-white border border-[#0e2a6e]/15 rounded-2xl p-6 sm:p-7 shadow-xs hover:border-[#0e2a6e]/35 transition-colors flex flex-col justify-start ${item.colSpan}`}
+                className={`bg-white border border-[#0e2a6e]/15 rounded-2xl p-6 sm:p-7 shadow-xs hover:border-[#ff006b]/45 transition-colors flex flex-col justify-start ${item.colSpan}`}
               >
                 <div className="flex items-center justify-between mb-4">
                   <span className="inline-flex items-center px-3 py-1 rounded-md bg-[#ffde59] text-xs font-extrabold uppercase tracking-wider text-black">
                     {item.step}
                   </span>
-                  <div className="w-10 h-10 rounded-xl bg-[#0e2a6e]/[0.06] flex items-center justify-center text-[#0e2a6e]">
-                    <Icon className="w-5 h-5 text-[#0e2a6e]" />
+                  <div className="w-10 h-10 rounded-xl bg-[#ff006b] flex items-center justify-center text-white shadow-xs">
+                    <Icon className="w-5 h-5 text-white" />
                   </div>
                 </div>
 
@@ -92,7 +92,7 @@ export const FiveStepProcessSection: React.FC = () => {
         </div>
 
         {/* Closing Promise Banner */}
-        <div className="max-w-4xl mx-auto bg-[#0e2a6e] text-white rounded-2xl p-5 sm:p-6 text-center shadow-md border border-black/15 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <div className="max-w-4xl mx-auto bg-[#0e2a6e] text-white rounded-2xl p-5 sm:p-6 text-center shadow-md border-t-4 border-t-[#ff006b] border border-black/15 flex flex-col sm:flex-row items-center justify-center gap-3">
           <CheckCircle2 className="w-5 h-5 text-[#ffde59] shrink-0" />
           <p className="text-sm sm:text-base font-bold tracking-wide">
             We build it. We run it. You just say yes.{' '}

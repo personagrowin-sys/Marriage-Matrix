@@ -422,14 +422,14 @@ export const BookingFormSection: React.FC<BookingFormSectionProps> = ({ onSubmit
                 type="submit"
                 id="booking-form-submit-btn"
                 disabled={isSubmitting}
-                className="w-full inline-flex items-center justify-center gap-3 bg-[#ffde59] hover:bg-[#ffde59]/90 text-black border border-black/15 text-base sm:text-lg font-black px-8 py-4 sm:py-4.5 rounded-xl shadow-md hover:shadow-lg transition-all active:scale-[0.98] cursor-pointer uppercase tracking-wide disabled:opacity-75"
+                className="w-full inline-flex items-center justify-center gap-3 bg-[#ff006b] hover:bg-[#ff006b]/90 text-white border border-black/10 text-base sm:text-lg font-black px-8 py-4 sm:py-4.5 rounded-xl shadow-lg shadow-[#ff006b]/25 hover:shadow-xl transition-all active:scale-[0.98] cursor-pointer uppercase tracking-wide disabled:opacity-75"
               >
                 {isSubmitting ? (
                   <span>Loading Available Slots...</span>
                 ) : (
                   <>
                     <span>BOOK YOUR MARRIAGE PROPOSAL STRATEGY CALL</span>
-                    <ArrowRight className="w-5 h-5" />
+                    <ArrowRight className="w-5 h-5 text-[#ffde59] stroke-[2.75]" />
                   </>
                 )}
               </button>
@@ -440,7 +440,7 @@ export const BookingFormSection: React.FC<BookingFormSectionProps> = ({ onSubmit
 
               {/* Small text */}
               <p className="mt-2 text-xs text-black/60 font-medium flex items-center justify-center gap-1.5">
-                <Lock className="w-3.5 h-3.5 text-[#0e2a6e]" />
+                <Lock className="w-3.5 h-3.5 text-[#ff006b]" />
                 <span>Your information is private and confidential.</span>
               </p>
             </div>

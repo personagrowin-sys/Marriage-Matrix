@@ -42,12 +42,12 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onBookCall, formUrl = BO
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0e2a6e] text-white text-xs font-bold uppercase tracking-wider mb-2.5">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-[#ff006b] text-white text-xs font-bold uppercase tracking-wider mb-2.5">
             <HelpCircle className="w-3.5 h-3.5 text-[#ffde59]" />
             <span>Common Questions</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#0e2a6e] font-display leading-[1.25] mb-2.5">
-            Frequently Asked Questions
+            Frequently Asked <span className="text-[#ff006b]">Questions</span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-black/70">
             Everything you need to know before booking your Marriage Proposal Strategy Call.
@@ -61,7 +61,9 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onBookCall, formUrl = BO
             return (
               <div
                 key={index}
-                className="border border-[#0e2a6e]/15 rounded-xl overflow-hidden bg-[#0e2a6e]/[0.03] transition-colors"
+                className={`border rounded-xl overflow-hidden bg-[#0e2a6e]/[0.03] transition-colors ${
+                  isOpen ? 'border-[#ff006b]/45' : 'border-[#0e2a6e]/15'
+                }`}
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
@@ -72,12 +74,12 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onBookCall, formUrl = BO
                   </span>
                   <ChevronDown
                     className={`w-4 h-4 shrink-0 transition-transform duration-200 ${
-                      isOpen ? 'rotate-180 text-[#0e2a6e]' : 'text-black/50'
+                      isOpen ? 'rotate-180 text-[#ff006b]' : 'text-black/50'
                     }`}
                   />
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-5 pt-3 text-sm sm:text-base text-black/80 leading-relaxed border-t border-[#0e2a6e]/15 bg-white">
+                  <div className="px-5 pb-5 pt-3 text-sm sm:text-base text-black/80 leading-relaxed border-t border-[#ff006b]/20 bg-white">
                     {faq.a}
                   </div>
                 )}
@@ -90,16 +92,16 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onBookCall, formUrl = BO
         <div className="text-center">
           <button
             onClick={handleClick}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#ffde59] hover:bg-[#ffde59]/90 text-black border border-black/15 text-sm sm:text-base font-black px-8 py-4 rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 cursor-pointer uppercase tracking-wider"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#ff006b] hover:bg-[#ff006b]/90 text-white border border-black/10 text-sm sm:text-base font-black px-8 py-4 rounded-xl shadow-lg shadow-[#ff006b]/25 hover:shadow-xl transition-all active:scale-95 cursor-pointer uppercase tracking-wider"
           >
             <span>Book Your Marriage Proposal Strategy Call</span>
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4 text-[#ffde59] stroke-[2.75]" />
           </button>
           <p className="mt-2 text-center text-xs sm:text-sm text-black/70 font-medium">
             Your call will be with one of our expert coaches.
           </p>
           <p className="mt-1 text-xs sm:text-sm text-black/60 font-medium">
-            Takes less than 60 seconds to book • 100% Free &amp; Confidential
+            Takes less than 60 seconds to book • <span className="text-[#ff006b] font-bold">100% Free &amp; Confidential</span>
           </p>
         </div>
       </div>

@@ -77,7 +77,7 @@ export const WhoWeAreSection: React.FC = () => {
                 key={idx}
                 className="bg-white text-black border border-white/20 rounded-2xl p-5 hover:bg-white/95 transition-colors"
               >
-                <div className="w-10 h-10 rounded-xl bg-[#0e2a6e] flex items-center justify-center text-[#ffde59] mb-4">
+                <div className="w-10 h-10 rounded-xl bg-[#ff006b] flex items-center justify-center text-white mb-4">
                   <Icon className="w-5 h-5" />
                 </div>
                 <h3 className="text-base font-bold text-[#0e2a6e] mb-2 font-display">

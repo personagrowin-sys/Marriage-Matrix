@@ -65,7 +65,7 @@ export const WhoIsThisForSection: React.FC<WhoIsThisForSectionProps> = ({ onBook
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-10">
-          <span className="text-xs uppercase tracking-widest font-bold text-black bg-[#ffde59] px-2.5 py-0.5 rounded-sm inline-block mb-2">
+          <span className="text-xs uppercase tracking-widest font-bold text-white bg-[#ff006b] px-3 py-1 rounded-md inline-block mb-2.5">
             Target Fit
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#0e2a6e] font-display leading-[1.25] mb-3">
@@ -78,8 +78,8 @@ export const WhoIsThisForSection: React.FC<WhoIsThisForSectionProps> = ({ onBook
 
         {/* Qualifier Sub-title */}
         <div className="max-w-5xl mx-auto mb-5 text-left">
-          <p className="text-xs uppercase tracking-wider font-bold text-[#0e2a6e] flex items-center gap-1.5">
-            <Check className="w-4 h-4 text-[#0e2a6e] stroke-[3]" />
+          <p className="text-xs uppercase tracking-wider font-bold text-[#ff006b] flex items-center gap-1.5">
+            <Check className="w-4 h-4 text-[#ff006b] stroke-[3]" />
             <span>This is for you if:</span>
           </p>
         </div>
@@ -89,7 +89,7 @@ export const WhoIsThisForSection: React.FC<WhoIsThisForSectionProps> = ({ onBook
           {criteria.map((item, index) => (
             <div
               key={index}
-              className="bg-[#0e2a6e]/[0.03] border border-[#0e2a6e]/15 rounded-xl p-4.5 sm:p-5 flex items-start gap-3.5 hover:border-[#0e2a6e]/35 transition-colors"
+              className="bg-[#0e2a6e]/[0.03] border border-[#0e2a6e]/15 rounded-xl p-4.5 sm:p-5 flex items-start gap-3.5 hover:border-[#ff006b]/45 transition-colors"
             >
               <div className="w-6 h-6 rounded-full bg-[#ffde59] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs border border-black/15">
                 <Check className="w-3.5 h-3.5 text-black stroke-[3]" />
@@ -103,9 +103,9 @@ export const WhoIsThisForSection: React.FC<WhoIsThisForSectionProps> = ({ onBook
         </div>
 
         {/* "This is not for you if..." Section */}
-        <div className="max-w-5xl mx-auto bg-[#0e2a6e] text-white border border-black/20 rounded-2xl p-6 sm:p-8 md:p-10 shadow-sm mb-10">
+        <div className="max-w-5xl mx-auto bg-[#0e2a6e] text-white border border-black/20 border-t-4 border-t-[#ff006b] rounded-2xl p-6 sm:p-8 md:p-10 shadow-sm mb-10">
           <div className="flex items-center gap-2.5 mb-5 sm:mb-6">
-            <div className="w-8 h-8 rounded-lg bg-[#ffde59] flex items-center justify-center text-black">
+            <div className="w-8 h-8 rounded-lg bg-[#ff006b] flex items-center justify-center text-white shrink-0">
               <AlertCircle className="w-5 h-5 stroke-[2.5]" />
             </div>
             <div>
@@ -124,8 +124,8 @@ export const WhoIsThisForSection: React.FC<WhoIsThisForSectionProps> = ({ onBook
                 key={index}
                 className="bg-white border border-white/20 rounded-xl p-4 sm:p-4.5 flex items-start gap-3 shadow-2xs"
               >
-                <div className="w-5 h-5 rounded-full bg-black flex items-center justify-center shrink-0 mt-0.5">
-                  <X className="w-3 h-3 text-[#ffde59] stroke-[3]" />
+                <div className="w-5 h-5 rounded-full bg-[#ff006b] flex items-center justify-center shrink-0 mt-0.5">
+                  <X className="w-3 h-3 text-white stroke-[3]" />
                 </div>
                 <p className="text-xs sm:text-sm md:text-[15px] font-semibold text-black leading-snug">
                   {point}
@@ -139,10 +139,10 @@ export const WhoIsThisForSection: React.FC<WhoIsThisForSectionProps> = ({ onBook
         <div className="text-center mt-6 sm:mt-8">
           <button
             onClick={handleClick}
-            className="inline-flex items-center justify-center gap-3 bg-[#ffde59] hover:bg-[#ffde59]/90 text-black border border-black/15 text-base sm:text-lg font-black px-8 sm:px-10 py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 active:scale-[0.98] cursor-pointer tracking-wide uppercase"
+            className="inline-flex items-center justify-center gap-3 bg-[#ff006b] hover:bg-[#ff006b]/90 text-white border border-black/10 text-base sm:text-lg font-black px-8 sm:px-10 py-4 rounded-xl shadow-lg shadow-[#ff006b]/25 hover:shadow-xl transition-all duration-200 active:scale-[0.98] cursor-pointer tracking-wide uppercase"
           >
             <span>Book Your Marriage Proposal Strategy Call</span>
-            <ArrowRight className="w-5 h-5" />
+            <ArrowRight className="w-5 h-5 text-[#ffde59] stroke-[2.75]" />
           </button>
           <p className="mt-2 text-center text-xs sm:text-sm text-black/70 font-medium">
             Your call will be with one of our expert coaches.

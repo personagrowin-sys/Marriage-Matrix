@@ -44,10 +44,10 @@ export const Header: React.FC<HeaderProps> = ({ onBookCall, formUrl = BOOKING_FO
           <button
             onClick={handleClick}
             id="nav-cta-btn"
-            className="inline-flex items-center gap-1.5 bg-[#ffde59] hover:bg-[#ffde59]/90 text-black text-xs sm:text-sm font-black px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl shadow-xs hover:shadow transition-all duration-150 active:scale-95 cursor-pointer uppercase tracking-wider border border-black/15"
+            className="inline-flex items-center gap-1.5 bg-[#ff006b] hover:bg-[#ff006b]/90 text-white text-xs sm:text-sm font-black px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl shadow-xs hover:shadow transition-all duration-150 active:scale-95 cursor-pointer uppercase tracking-wider border border-black/10"
           >
             <span>Book Your Marriage Proposal Strategy Call</span>
-            <ArrowRight className="w-3.5 h-3.5 stroke-[2.5]" />
+            <ArrowRight className="w-3.5 h-3.5 stroke-[2.75] text-[#ffde59]" />
           </button>
         </div>
       </div>

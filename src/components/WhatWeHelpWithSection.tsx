@@ -38,7 +38,7 @@ export const WhatWeHelpWithSection: React.FC<WhatWeHelpWithProps> = ({ onScrollT
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-xs uppercase tracking-widest font-bold text-black bg-[#ffde59] px-2.5 py-0.5 rounded-sm inline-block mb-2">
+          <span className="text-xs uppercase tracking-widest font-bold text-white bg-[#ff006b] px-3 py-1 rounded-md inline-block mb-2.5">
             System &amp; Structure
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#0e2a6e] font-display">
@@ -53,14 +53,14 @@ export const WhatWeHelpWithSection: React.FC<WhatWeHelpWithProps> = ({ onScrollT
             return (
               <div
                 key={idx}
-                className="bg-[#0e2a6e]/[0.03] border border-[#0e2a6e]/15 rounded-2xl p-6 flex flex-col justify-between hover:border-[#0e2a6e]/35 transition-all shadow-2xs group"
+                className="bg-[#0e2a6e]/[0.03] border border-[#0e2a6e]/15 rounded-2xl p-6 flex flex-col justify-between hover:border-[#ff006b]/45 transition-all shadow-2xs group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-black tracking-widest text-[#0e2a6e] font-mono">
+                    <span className="text-xs font-black tracking-widest text-[#ff006b] font-mono tabular-nums">
                       {card.num}
                     </span>
-                    <div className="w-8 h-8 rounded-lg bg-[#0e2a6e] flex items-center justify-center text-[#ffde59] shadow-2xs">
+                    <div className="w-8 h-8 rounded-lg bg-[#ff006b] flex items-center justify-center text-white shadow-2xs">
                       <Icon className="w-4 h-4" />
                     </div>
                   </div>
@@ -87,10 +87,10 @@ export const WhatWeHelpWithSection: React.FC<WhatWeHelpWithProps> = ({ onScrollT
           <button
             onClick={onScrollToForm}
             id="what-we-help-cta"
-            className="inline-flex items-center justify-center gap-2.5 bg-[#ffde59] hover:bg-[#ffde59]/90 text-black border border-black/15 text-sm sm:text-base font-black px-7 py-3.5 rounded-xl shadow-sm hover:shadow transition-all active:scale-95 cursor-pointer uppercase tracking-wide"
+            className="inline-flex items-center justify-center gap-2.5 bg-[#ff006b] hover:bg-[#ff006b]/90 text-white border border-black/10 text-sm sm:text-base font-black px-7 py-3.5 rounded-xl shadow-lg shadow-[#ff006b]/25 hover:shadow-xl transition-all active:scale-95 cursor-pointer uppercase tracking-wide"
           >
             <span>BOOK YOUR MARRIAGE PROPOSAL STRATEGY CALL</span>
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4 text-[#ffde59] stroke-[2.75]" />
           </button>
         </div>
       </div>
